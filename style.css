@@ -1,34 +1,3 @@
-@font-face {
-	font-family: 'Regular';
-	src: url('../fonts/Graphik-Regular.eot');
-	src: url('../fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Graphik-Regular.woff') format('woff'),
-		url('../fonts/Graphik-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Semibold';
-	src: url('../fonts/Graphik-Semibold.eot');
-	src: url('../fonts/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Graphik-Semibold.woff') format('woff'),
-		url('../fonts/Graphik-Semibold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-}
-
-
-@font-face {
-	font-family: 'Medium';
-	src: url('../fonts/Graphik-Medium.eot');
-	src: url('../fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Graphik-Medium.woff') format('woff'),
-		url('../fonts/Graphik-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,11 +30,13 @@ body, html {
 	padding: 0;
 	height: 100%;
 	background-color: #000000;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	font-weight: 300;
 }
 
 a, a:link, a:visited {
 	text-decoration: none;
-	font-family: 'Medium';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size:18px;
 	color:#ffffff;
 }
@@ -95,7 +66,7 @@ img {
 }
 
 p {
-	font-family: 'Regular';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 16px;
 	line-height: 180%;
 	color: #ffffff;
@@ -103,35 +74,35 @@ p {
 }
 
 h1 {
-	font-family: 'Semibold';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 110px;
 	line-height: 92%;
 	color: #ffffff;
 }
 
 h2 {
-	font-family: 'Semibold';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 72px;
 	line-height: 110%;
 	color: #ffffff;
 }
 
 h3 {
-	font-family: 'Semibold';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 54px;
 	line-height: 120%;
 	color: #ffffff;
 }
 
 h4 {
-	font-family: 'Semibold';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 24px;
 	line-height: 160%;
 	color: #ffffff;
 }
 
 h5 {
-	font-family: 'Medium';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 15px;
 	color: #888888;
 	margin-bottom: 20px;
@@ -145,7 +116,7 @@ h5 {
 }
 
 a.logo {
-	font-family: 'Semibold';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 20px;
 	color: #000;
 	letter-spacing: 0.4px;
@@ -235,7 +206,6 @@ a.logo {
 /*	-------------------------- HOME PAGE -------------------------- */
 
 #big-photo {
-	background-image: url(../img/home_me.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 34%;
@@ -315,7 +285,7 @@ a.logo {
 
 .email {
 	color:#000;
-	font-family: 'Medium';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size:14px;
 	float: left;
 }
@@ -383,7 +353,7 @@ p.work {
 }
 
 .single li {
-	font-family: 'Regular';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 16px;
 	line-height: 180%;
 	color: #ffffff;
@@ -1070,7 +1040,7 @@ body.menu-active .menu-overlay {
 }
 
 .menu-nav a {
-	font-family: 'Semibold';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	font-size: 44px;
 	line-height: 100%;
 	display: none;
@@ -1092,20 +1062,6 @@ body.menu-active .menu-overlay {
 	text-decoration: line-through;
 }
 
-
-/* hover for changing color fade out others
-
-.menu-nav:hover a, .menu-nav:hover a .project-info  {
-	color: #aaa;
-}
-.menu-nav:hover a:hover  {
-	color: #111;
-}
-.menu-nav:hover a:hover .project-info {
-	color: #000;
-}
-*/
-
 .menu-nav a.animated {
 	display: block;
 	-webkit-animation-duration: .3s;
@@ -1115,7 +1071,7 @@ body.menu-active .menu-overlay {
 }
 
 .menu-nav a .project-info {
-	font-family: 'Medium';
+	font-family: 'Saira Semi Condensed', sans-serif;
 	color: #888;
 	letter-spacing: 0;
 	text-transform: none;

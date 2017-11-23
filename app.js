@@ -92,10 +92,9 @@ $(document).ready(function() {
 		$(".works").closeMenu();
 		return false;
 	});
-})
-$(document).ready(function() {
-	$(".header").headroom();
-	$(".footer").headroom({
+
+	//$(".header").headroom();
+	/*$(".footer").headroom({
 		classes: {
 			// when element is initialised
 			initial: "footroom",
@@ -108,48 +107,12 @@ $(document).ready(function() {
 			// when below offset
 			notTop: "footroom--not-top"
 		},
-	});
-})
+	});*/
+});
 
 
 var video = document.getElementById('video'),
     fraction = 0.8;
-
-function checkScroll() {
-  var x = video.offsetLeft,
-      y = video.offsetTop,
-      w = video.offsetWidth,
-      h = video.offsetHeight,
-      r = x + w, //right
-      b = y + h, //bottom
-      visibleX,
-      visibleY,
-      visible;
-
-  if (window.pageXOffset >= r ||
-      window.pageYOffset >= b ||
-      window.pageXOffset + window.innerWidth < x ||
-      window.pageYOffset + window.innerHeight < y
-     ) {    
-
-    info.innerHTML = '0%';
-    return;
-  }
-
-  visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-  visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-
-  visible = visibleX * visibleY / (w * h);
-
-  info.innerHTML = Math.round(visible * 100) + '%';
-
-  if (visible > fraction) {
-    video.play();
-  } else {
-    video.pause();
-  }
-
-}
 
 //window.addEventListener('scroll', checkScroll, false);
 //window.addEventListener('resize', checkScroll, false);
@@ -158,4 +121,4 @@ function checkScroll() {
 //checkScroll();
 
 //as soon as we know the video dimensions
-video.addEventListener('loadedmetadata', checkScroll, false);
+//video.addEventListener('loadedmetadata', checkScroll, false);
